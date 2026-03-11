@@ -387,6 +387,144 @@
           "theme": "친근하고 실용적인, 복잡한 걸 쉽게 풀어내는 생활 속 투자의 대가",
           "emoji": "🛒"
         }
+      },
+      {
+        "id": "trend-chief",
+        "name": "trend-chief",
+        "workspace": "/Users/j/.openclaw/agents/trend-chief/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/trend-chief/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Trend Chief",
+          "theme": "트렌드의 냄새를 맡는, 속도와 품질 사이에서 최적을 찾는 편집장",
+          "emoji": "📡"
+        }
+      },
+      {
+        "id": "trend-scout",
+        "name": "trend-scout",
+        "workspace": "/Users/j/.openclaw/agents/trend-scout/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/trend-scout/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Trend Scout",
+          "theme": "호기심 폭발, 세상 모든 트렌드를 실시간으로 추적하는",
+          "emoji": "🔍"
+        }
+      },
+      {
+        "id": "keyword-analyst",
+        "name": "keyword-analyst",
+        "workspace": "/Users/j/.openclaw/agents/keyword-analyst/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/keyword-analyst/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Keyword Analyst",
+          "theme": "데이터에 집착하는, 검색 의도를 꿰뚫어 보는",
+          "emoji": "🔑"
+        }
+      },
+      {
+        "id": "blog-writer",
+        "name": "blog-writer",
+        "workspace": "/Users/j/.openclaw/agents/blog-writer/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/blog-writer/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Blog Writer",
+          "theme": "어떤 주제든 읽히는 글로 만드는, 톤 전환의 달인",
+          "emoji": "✏️"
+        }
+      },
+      {
+        "id": "seo-optimizer",
+        "name": "seo-optimizer",
+        "workspace": "/Users/j/.openclaw/agents/seo-optimizer/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/seo-optimizer/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "SEO Optimizer",
+          "theme": "검색 알고리즘의 언어를 이해하는, 디테일에 집착하는",
+          "emoji": "🏷️"
+        }
+      },
+      {
+        "id": "fact-checker",
+        "name": "fact-checker",
+        "workspace": "/Users/j/.openclaw/agents/fact-checker/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/fact-checker/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Fact Checker",
+          "theme": "의심이 직업인, 모든 주장에 출처를 요구하는",
+          "emoji": "✅"
+        }
+      },
+      {
+        "id": "revenue-ops",
+        "name": "revenue-ops",
+        "workspace": "/Users/j/.openclaw/agents/revenue-ops/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/revenue-ops/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Revenue Ops",
+          "theme": "숫자로 말하는, 수익과 독자 경험 사이 최적점을 찾는",
+          "emoji": "💰"
+        }
+      },
+      {
+        "id": "update-tracker",
+        "name": "update-tracker",
+        "workspace": "/Users/j/.openclaw/agents/update-tracker/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/update-tracker/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Update Tracker",
+          "theme": "꼼꼼하고 체계적인, 발행된 글의 수명을 관리하는",
+          "emoji": "🔄"
+        }
       }
     ]
   },
@@ -463,6 +601,17 @@
     {
       "type": "route",
       "agentId": "debate-moderator",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "<YOUR_CHANNEL_ID>"
+        }
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "trend-chief",
       "match": {
         "channel": "slack",
         "peer": {
@@ -547,6 +696,9 @@
           "allow": true
         },
         "#ai-debate": {
+          "allow": true
+        },
+        "#ai-blog": {
           "allow": true
         }
       }

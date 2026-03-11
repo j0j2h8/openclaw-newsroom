@@ -1,7 +1,7 @@
 # OpenClaw Newsroom
 
-24시간 자율 운영되는 AI 금융 편집국 시스템.
-OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며, 시장 분석 · 종목 추천 · 속보 감지 · 리스크 관리 · 콘텐츠 발행 · 투자 대가 토론을 자동 수행한다.
+24시간 자율 운영되는 AI 편집국 시스템.
+OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며, 금융 편집국(시장 분석 · 종목 추천 · 속보 · 리스크 · 투자 대가 토론)과 트렌드 편집국(트렌드 포착 · SEO 블로그 · 수익 최적화)을 자동 운영한다.
 
 ## 조직도
 
@@ -40,6 +40,16 @@ OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며,
 
     편집 파이프라인: trend-researcher → content-writer → humanizer → editor-in-chief
     여행 파이프라인: destination-researcher → itinerary-builder → travel-planner
+
+    📡 트렌드 편집국 (#ai-blog)
+    trend-chief (편집장)
+    ┌──────┬──────┬──────┬──────┬──────┬──────┐
+    │🔍    │🔑    │✏️    │🏷️    │✅    │💰    │
+    │trend │key-  │blog  │seo   │fact  │reve- │
+    │scout │word  │writer│opti- │check │nue   │
+    │      │analy.│      │mizer │er    │ops   │
+    └──────┴──────┴──────┴──────┴──────┴──────┘
+    🔄 update-tracker (갱신 관리)
 ```
 
 ## Slack 채널
@@ -52,6 +62,7 @@ OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며,
 | `#ai-editorial` | 뉴스레터, 심층 분석, 섹터 리포트 |
 | `#ai-risk` | 시장 위기 스캔, 리스크 경보, 위클리 리스크 리뷰 |
 | `#ai-debate` | 투자 대가 토론 (종목 검증, 시장 전망) |
+| `#ai-blog` | 트렌드 편집국 (편집회의, 블로그 초안, 수익 리포트) |
 | `#ai-trip` | 여행 일정 추천 |
 
 ## 크론 스케줄 (KST)
@@ -63,6 +74,7 @@ OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며,
 | 매 정시 | 시장 위기 스캔 | risk-manager |
 | 매 30분 | 시스템 헬스체크 | newsroom-chief |
 | 04:00 | 오늘의 뉴스레터 | editor-in-chief |
+| 06:00 | 트렌드 편집회의 | trend-chief |
 | 06:00 | 미국장 마감 브리핑 | chief-analyst |
 | 06:00 | 세션 전환 (프리마켓) | news-desk |
 | 06:30 | 미국 추천 종목 | chief-analyst |
@@ -73,6 +85,7 @@ OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며,
 | 08:30 | 장 시작 전 브리핑 | chief-analyst |
 | 09:00 | 세션 전환 (아시아장) | news-desk |
 | 09:00~15:00 | 워치리스트 점검 (장중) | chief-analyst |
+| 14:00 | 오후 트렌드 체크 | trend-chief |
 | 15:30 | 세션 전환 (유럽장) | news-desk |
 | 16:00 | 장 마감 브리핑 | chief-analyst |
 | 16:30 | 마켓 데일리 요약 | editor-in-chief |
@@ -80,6 +93,7 @@ OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며,
 | 17:00 | 내일의 추천 종목 | chief-analyst |
 | 17:30 | 추천 종목 등록 | performance-tracker |
 | 17:30 | 추천 종목 토론 | debate-moderator |
+| 18:00 | 트렌드 일일 리포트 | trend-chief |
 | 19:00 | 이브닝 마감회의 | newsroom-chief |
 | 22:00~05:00 | 워치리스트 점검 (미국장) | chief-analyst |
 | 22:30 | 세션 전환 (미국장) | news-desk |
@@ -87,6 +101,7 @@ OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며,
 ### 주간
 | 시간 | 작업 | 에이전트 |
 |------|------|---------|
+| 월 09:00 | 주간 갱신 점검 | trend-chief |
 | 월/목 08:00 | 매크로 레짐 판단 | macro-strategist |
 | 수 17:30 | 심층 종목 분석 | chief-analyst |
 | 수 18:30 | 딥다이브 리포트 | editor-in-chief |
@@ -103,6 +118,7 @@ OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며,
 | 시간 | 작업 | 에이전트 |
 |------|------|---------|
 | 매월 1일 10:00 | 월간 전략 피드백 | performance-tracker |
+| 매월 1일 10:00 | 월간 수익 리뷰 | trend-chief |
 
 ## 디렉토리 구조
 
