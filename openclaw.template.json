@@ -299,7 +299,7 @@
         "channel": "slack",
         "peer": {
           "kind": "channel",
-          "id": "C0AKAV7QD0W"
+          "id": "<YOUR_CHANNEL_ID>"
         }
       }
     },
@@ -310,7 +310,7 @@
         "channel": "slack",
         "peer": {
           "kind": "channel",
-          "id": "C0AK3MUJU07"
+          "id": "<YOUR_CHANNEL_ID>"
         }
       }
     },
@@ -321,7 +321,7 @@
         "channel": "slack",
         "peer": {
           "kind": "channel",
-          "id": "C0AKDTGRELX"
+          "id": "<YOUR_CHANNEL_ID>"
         }
       }
     },
@@ -332,7 +332,7 @@
         "channel": "slack",
         "peer": {
           "kind": "channel",
-          "id": "C0AE356T623"
+          "id": "<YOUR_CHANNEL_ID>"
         }
       }
     },
@@ -343,7 +343,7 @@
         "channel": "slack",
         "peer": {
           "kind": "channel",
-          "id": "C0ALPKE9R7S"
+          "id": "<YOUR_CHANNEL_ID>"
         }
       }
     },
@@ -354,7 +354,7 @@
         "channel": "slack",
         "peer": {
           "kind": "channel",
-          "id": "C0AK3SXTXC7"
+          "id": "<YOUR_CHANNEL_ID>"
         }
       }
     }
