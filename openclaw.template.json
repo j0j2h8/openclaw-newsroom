@@ -285,6 +285,108 @@
           "theme": "큰 그림을 보는, 거시경제 흐름에서 방향을 읽는",
           "emoji": "🌐"
         }
+      },
+      {
+        "id": "debate-moderator",
+        "name": "debate-moderator",
+        "workspace": "/Users/j/.openclaw/agents/debate-moderator/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/debate-moderator/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Debate Moderator",
+          "theme": "공정하고 날카로운, 핵심을 찌르는 질문으로 토론을 이끄는",
+          "emoji": "🎙️"
+        }
+      },
+      {
+        "id": "warren-buffett",
+        "name": "warren-buffett",
+        "workspace": "/Users/j/.openclaw/agents/warren-buffett/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/warren-buffett/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Warren Buffett",
+          "theme": "느긋하지만 날카로운, 상식으로 복잡함을 꿰뚫는 가치투자의 현인",
+          "emoji": "🦉"
+        }
+      },
+      {
+        "id": "cathie-wood",
+        "name": "cathie-wood",
+        "workspace": "/Users/j/.openclaw/agents/cathie-wood/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/cathie-wood/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Cathie Wood",
+          "theme": "확신에 찬, 5년 뒤를 보는 파괴적 혁신의 전도사",
+          "emoji": "🚀"
+        }
+      },
+      {
+        "id": "ray-dalio",
+        "name": "ray-dalio",
+        "workspace": "/Users/j/.openclaw/agents/ray-dalio/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/ray-dalio/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Ray Dalio",
+          "theme": "원칙에 집착하는, 거대한 흐름을 읽는 매크로 전략의 거장",
+          "emoji": "🌊"
+        }
+      },
+      {
+        "id": "stanley-druckenmiller",
+        "name": "stanley-druckenmiller",
+        "workspace": "/Users/j/.openclaw/agents/stanley-druckenmiller/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/stanley-druckenmiller/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Stanley Druckenmiller",
+          "theme": "매의 눈으로 기회를 포착하는, 확신이 서면 올인하는 매크로 트레이더",
+          "emoji": "🦅"
+        }
+      },
+      {
+        "id": "john-templeton",
+        "name": "john-templeton",
+        "workspace": "/Users/j/.openclaw/agents/john-templeton/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/john-templeton/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "John Templeton",
+          "theme": "낙관적이고 경건한, 최대 비관의 순간에 매수하는 역발상 투자의 선구자",
+          "emoji": "🌍"
+        }
+      },
+      {
+        "id": "jesse-livermore",
+        "name": "jesse-livermore",
+        "workspace": "/Users/j/.openclaw/agents/jesse-livermore/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/jesse-livermore/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Jesse Livermore",
+          "theme": "직감과 경험의 트레이더, 시장의 리듬을 읽는 전설적 투기꾼",
+          "emoji": "🎲"
+        }
+      },
+      {
+        "id": "peter-lynch",
+        "name": "peter-lynch",
+        "workspace": "/Users/j/.openclaw/agents/peter-lynch/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/peter-lynch/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Peter Lynch",
+          "theme": "친근하고 실용적인, 복잡한 걸 쉽게 풀어내는 생활 속 투자의 대가",
+          "emoji": "🛒"
+        }
       }
     ]
   },
@@ -350,6 +452,17 @@
     {
       "type": "route",
       "agentId": "travel-planner",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "<YOUR_CHANNEL_ID>"
+        }
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "debate-moderator",
       "match": {
         "channel": "slack",
         "peer": {
@@ -431,6 +544,9 @@
           "allow": true
         },
         "#ai-trip": {
+          "allow": true
+        },
+        "#ai-debate": {
           "allow": true
         }
       }

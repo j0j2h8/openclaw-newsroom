@@ -1,7 +1,7 @@
 # OpenClaw Newsroom
 
 24시간 자율 운영되는 AI 금융 편집국 시스템.
-OpenClaw 플랫폼 위에서 19개 에이전트가 Slack을 통해 협업하며, 시장 분석 · 종목 추천 · 속보 감지 · 리스크 관리 · 콘텐츠 발행을 자동 수행한다.
+OpenClaw 플랫폼 위에서 27개 에이전트가 Slack을 통해 협업하며, 시장 분석 · 종목 추천 · 속보 감지 · 리스크 관리 · 콘텐츠 발행 · 투자 대가 토론을 자동 수행한다.
 
 ## 조직도
 
@@ -28,6 +28,16 @@ OpenClaw 플랫폼 위에서 19개 에이전트가 Slack을 통해 협업하며,
                     │ 🌐 매크로전략실│ macro-strategist
                     └────────────┘
 
+    🎙️ 토론부 (#ai-debate)
+    debate-moderator (의장)
+    ┌───┬───┬───┬───┬───┬───┬───┐
+    │🦉 │🚀 │🌊 │🦅 │🌍 │🎲 │🛒 │
+    │버핏│우드│달리│드러│템플│리버│린치│
+    │   │   │오 │켄밀│턴 │모어│   │
+    │   │   │   │러 │   │   │   │
+    └───┴───┴───┴───┴───┴───┴───┘
+    * 주제별 3~4명 선별 호출
+
     편집 파이프라인: trend-researcher → content-writer → humanizer → editor-in-chief
     여행 파이프라인: destination-researcher → itinerary-builder → travel-planner
 ```
@@ -41,6 +51,7 @@ OpenClaw 플랫폼 위에서 19개 에이전트가 Slack을 통해 협업하며,
 | `#ai-breaking` | 속보 감지, 긴급 알림, 세션 전환 브리핑 |
 | `#ai-editorial` | 뉴스레터, 심층 분석, 섹터 리포트 |
 | `#ai-risk` | 시장 위기 스캔, 리스크 경보, 위클리 리스크 리뷰 |
+| `#ai-debate` | 투자 대가 토론 (종목 검증, 시장 전망) |
 | `#ai-trip` | 여행 일정 추천 |
 
 ## 크론 스케줄 (KST)
@@ -56,6 +67,7 @@ OpenClaw 플랫폼 위에서 19개 에이전트가 Slack을 통해 협업하며,
 | 06:00 | 세션 전환 (프리마켓) | news-desk |
 | 06:30 | 미국 추천 종목 | chief-analyst |
 | 06:30 | 미국 성과 업데이트 | performance-tracker |
+| 07:00 | 프리마켓 종목 토론 | debate-moderator |
 | 07:00 | 모닝 편집회의 | newsroom-chief |
 | 07:30 | 매크로 이벤트 프리뷰 | macro-strategist |
 | 08:30 | 장 시작 전 브리핑 | chief-analyst |
@@ -67,6 +79,7 @@ OpenClaw 플랫폼 위에서 19개 에이전트가 Slack을 통해 협업하며,
 | 16:30 | 일일 성과 업데이트 | performance-tracker |
 | 17:00 | 내일의 추천 종목 | chief-analyst |
 | 17:30 | 추천 종목 등록 | performance-tracker |
+| 17:30 | 추천 종목 토론 | debate-moderator |
 | 19:00 | 이브닝 마감회의 | newsroom-chief |
 | 22:00~05:00 | 워치리스트 점검 (미국장) | chief-analyst |
 | 22:30 | 세션 전환 (미국장) | news-desk |
@@ -80,6 +93,7 @@ OpenClaw 플랫폼 위에서 19개 에이전트가 Slack을 통해 협업하며,
 | 금 17:00 | 투자 환경 시그널 | macro-strategist |
 | 금 17:30 | 섹터 로테이션 리포트 | chief-analyst |
 | 금 18:30 | 섹터 위클리 | editor-in-chief |
+| 금 18:00 | 주간 시장 전망 토론 | debate-moderator |
 | 금 19:00 | 위클리 리스크 리뷰 | risk-manager |
 | 토 09:00 | 주간 성적표 | performance-tracker |
 | 토 10:00 | 위클리 리뷰 | editor-in-chief |
