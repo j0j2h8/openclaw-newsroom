@@ -1,0 +1,17 @@
+{
+  "stocks": [
+    {"symbol": "005930.KS", "name": "삼성전자"},
+    {"symbol": "000660.KS", "name": "SK하이닉스"},
+    {"symbol": "NVDA", "name": "엔비디아"},
+    {"symbol": "AAPL", "name": "애플"},
+    {"symbol": "NVO", "name": "노보 노디스크"},
+    {"symbol": "IREN", "name": "아이리스 에너지"},
+    {"symbol": "TSLA", "name": "테슬라"},
+    {"symbol": "161390.KS", "name": "한국타이어앤테크놀로지"},
+    {"symbol": "108490.KQ", "name": "로보티즈"},
+    {"symbol": "SMR", "name": "NuScale Power"},
+    {"symbol": "VRT", "name": "버티브 홀딩스"},
+    {"symbol": "034020.KS", "name": "두산에너빌리티"}
+  ],
+  "alertThreshold": 5
+}

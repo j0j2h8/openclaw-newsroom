@@ -1,0 +1,36 @@
+# === 민감 정보 (토큰, 키, 인증) ===
+openclaw.json
+openclaw.json.bak*
+identity/
+devices/
+exec-approvals.*
+
+# === 런타임 데이터 ===
+logs/
+delivery-queue/
+subagents/
+tasks/
+update-check.json
+memory/*.sqlite
+memory/*.sqlite-*
+
+# === 세션 트랜스크립트 (용량 크고 개인정보 포함) ===
+agents/*/sessions/
+agents/main/
+
+# === 에이전트 런타임 (openclaw이 자동 생성) ===
+agents/*/workspace/.git/
+agents/*/workspace/.openclaw/
+agents/*/workspace/memory/
+agents/*/agent/
+
+# === 번들 파일 (openclaw 패키지에 포함) ===
+completions/
+canvas/
+
+# === 기타 ===
+~
+.claude/
+settings/
+*.sock
+__pycache__/

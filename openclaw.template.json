@@ -1,0 +1,470 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.7",
+    "lastTouchedAt": "2026-03-10T06:44:25.426Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-09T01:59:52.968Z",
+    "lastRunVersion": "2026.3.7",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai-codex/gpt-5.4"
+      },
+      "models": {
+        "openai-codex/gpt-5.4": {}
+      },
+      "workspace": "/Users/j/.openclaw/workspace",
+      "timeoutSeconds": 900
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "researcher",
+        "name": "researcher",
+        "workspace": "/Users/j/.openclaw/agents/researcher/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/researcher/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        }
+      },
+      {
+        "id": "risk-manager",
+        "name": "risk-manager",
+        "workspace": "/Users/j/.openclaw/agents/risk-manager/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/risk-manager/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Risk Manager",
+          "theme": "냉철하고 보수적인, 손실 앞에서 절대 타협하지 않는",
+          "emoji": "🛡️"
+        }
+      },
+      {
+        "id": "reporter",
+        "name": "reporter",
+        "workspace": "/Users/j/.openclaw/agents/reporter/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/reporter/agent",
+        "model": "openai-codex/gpt-5.4"
+      },
+      {
+        "id": "tech-analyst",
+        "name": "tech-analyst",
+        "workspace": "/Users/j/.openclaw/agents/tech-analyst/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/tech-analyst/agent",
+        "model": "openai-codex/gpt-5.4"
+      },
+      {
+        "id": "fundamental-analyst",
+        "name": "fundamental-analyst",
+        "workspace": "/Users/j/.openclaw/agents/fundamental-analyst/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/fundamental-analyst/agent",
+        "model": "openai-codex/gpt-5.4"
+      },
+      {
+        "id": "news-analyst",
+        "name": "news-analyst",
+        "workspace": "/Users/j/.openclaw/agents/news-analyst/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/news-analyst/agent",
+        "model": "openai-codex/gpt-5.4"
+      },
+      {
+        "id": "chief-analyst",
+        "name": "chief-analyst",
+        "workspace": "/Users/j/.openclaw/agents/chief-analyst/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/chief-analyst/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "heartbeat": {
+          "every": "12h"
+        },
+        "identity": {
+          "name": "Chief Analyst",
+          "theme": "데이터와 차트로 무장한, 냉철하고 정밀한 수석 애널리스트",
+          "emoji": "📈"
+        }
+      },
+      {
+        "id": "editor-in-chief",
+        "name": "editor-in-chief",
+        "workspace": "/Users/j/.openclaw/agents/editor-in-chief/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/editor-in-chief/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Editor-in-Chief",
+          "theme": "까다롭지만 공정한, 콘텐츠 품질에 타협 없는 편집부장",
+          "emoji": "📰"
+        }
+      },
+      {
+        "id": "news-desk",
+        "name": "news-desk",
+        "workspace": "/Users/j/.openclaw/agents/news-desk/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/news-desk/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "News Desk",
+          "theme": "24시간 깨어있는, 속보를 놓치지 않는 속보부장",
+          "emoji": "🚨"
+        }
+      },
+      {
+        "id": "newsroom-chief",
+        "name": "newsroom-chief",
+        "workspace": "/Users/j/.openclaw/agents/newsroom-chief/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/newsroom-chief/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Newsroom Chief",
+          "theme": "전체를 조율하고 큰 그림을 보는, 침착한 편집국장",
+          "emoji": "🏛️"
+        }
+      },
+      {
+        "id": "trend-researcher",
+        "name": "trend-researcher",
+        "workspace": "/Users/j/.openclaw/agents/trend-researcher/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/trend-researcher/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Trend Researcher",
+          "theme": "호기심 많고 집요한, 소스를 끝까지 파는",
+          "emoji": "🔭"
+        }
+      },
+      {
+        "id": "content-writer",
+        "name": "content-writer",
+        "workspace": "/Users/j/.openclaw/agents/content-writer/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/content-writer/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Content Writer",
+          "theme": "쉽고 명쾌한, 복잡한 걸 간결하게 풀어쓰는",
+          "emoji": "✍️"
+        }
+      },
+      {
+        "id": "humanizer",
+        "name": "humanizer",
+        "workspace": "/Users/j/.openclaw/agents/humanizer/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/humanizer/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Humanizer",
+          "theme": "예리하고 감각적인, AI 냄새를 귀신같이 잡아내는",
+          "emoji": "🎭"
+        }
+      },
+      {
+        "id": "travel-planner",
+        "name": "travel-planner",
+        "workspace": "/Users/j/.openclaw/agents/travel-planner/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/travel-planner/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Travel Planner",
+          "theme": "경험 많은 여행 가이드, 현실적이면서도 설레는 계획을 짠다",
+          "emoji": "🗺️"
+        }
+      },
+      {
+        "id": "destination-researcher",
+        "name": "destination-researcher",
+        "workspace": "/Users/j/.openclaw/agents/destination-researcher/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/destination-researcher/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Destination Researcher",
+          "theme": "현지 사정에 밝은, 실용적 정보만 골라내는",
+          "emoji": "🌏"
+        }
+      },
+      {
+        "id": "itinerary-builder",
+        "name": "itinerary-builder",
+        "workspace": "/Users/j/.openclaw/agents/itinerary-builder/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/itinerary-builder/agent",
+        "model": "openai-codex/gpt-5.4",
+        "identity": {
+          "name": "Itinerary Builder",
+          "theme": "꼼꼼하고 현실적인, 동선과 시간을 정밀하게 짜는",
+          "emoji": "📋"
+        }
+      },
+      {
+        "id": "performance-tracker",
+        "name": "performance-tracker",
+        "workspace": "/Users/j/.openclaw/agents/performance-tracker/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/performance-tracker/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Performance Tracker",
+          "theme": "숫자로만 말하는, 냉정하고 객관적인 성과 분석관",
+          "emoji": "📊"
+        }
+      },
+      {
+        "id": "macro-strategist",
+        "name": "macro-strategist",
+        "workspace": "/Users/j/.openclaw/agents/macro-strategist/workspace",
+        "agentDir": "/Users/j/.openclaw/agents/macro-strategist/agent",
+        "model": "openai-codex/gpt-5.4",
+        "tools": {
+          "alsoAllow": [
+            "web_search",
+            "web_fetch"
+          ]
+        },
+        "identity": {
+          "name": "Macro Strategist",
+          "theme": "큰 그림을 보는, 거시경제 흐름에서 방향을 읽는",
+          "emoji": "🌐"
+        }
+      }
+    ]
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "bindings": [
+    {
+      "type": "route",
+      "agentId": "chief-analyst",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "C0AKAV7QD0W"
+        }
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "editor-in-chief",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "C0AK3MUJU07"
+        }
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "news-desk",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "C0AKDTGRELX"
+        }
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "risk-manager",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "C0AE356T623"
+        }
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "newsroom-chief",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "C0ALPKE9R7S"
+        }
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "travel-planner",
+      "match": {
+        "channel": "slack",
+        "peer": {
+          "kind": "channel",
+          "id": "C0AK3SXTXC7"
+        }
+      }
+    }
+  ],
+  "messages": {
+    "inbound": {
+      "debounceMs": 5000
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer",
+    "maintenance": {
+      "mode": "enforce",
+      "pruneAfter": "7d",
+      "maxEntries": 100
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "slack": {
+      "mode": "socket",
+      "webhookPath": "/slack/events",
+      "enabled": true,
+      "botToken": "<YOUR_BOT_TOKEN>",
+      "appToken": "<YOUR_APP_TOKEN>",
+      "userTokenReadOnly": true,
+      "groupPolicy": "allowlist",
+      "streaming": "partial",
+      "nativeStreaming": true,
+      "allowFrom": [
+        "*"
+      ],
+      "dm": {
+        "enabled": true
+      },
+      "channels": {
+        "#ai-bot": {
+          "allow": true
+        },
+        "#ai-briefing": {
+          "allow": true
+        },
+        "#ai-research": {
+          "allow": true
+        },
+        "#ai-editorial": {
+          "allow": true
+        },
+        "#ai-breaking": {
+          "allow": true
+        },
+        "#ai-risk": {
+          "allow": true
+        },
+        "#ai-desk": {
+          "allow": true
+        },
+        "#ai-trip": {
+          "allow": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "<YOUR_GATEWAY_TOKEN>"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "skills": {
+    "entries": {
+      "apple-notes": {
+        "enabled": false
+      }
+    }
+  }
+}
