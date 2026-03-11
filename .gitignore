@@ -21,8 +21,17 @@ agents/main/
 # === 에이전트 런타임 (openclaw이 자동 생성) ===
 agents/*/workspace/.git/
 agents/*/workspace/.openclaw/
+workspace/.openclaw/
 agents/*/workspace/memory/
 agents/*/agent/
+
+# === 초기 설정 / 빈 템플릿 (런타임 불필요) ===
+**/BOOTSTRAP.md
+**/TOOLS.md
+
+# === 크론 실행 로그 / 백업 ===
+cron/runs/
+cron/*.bak
 
 # === 번들 파일 (openclaw 패키지에 포함) ===
 completions/
