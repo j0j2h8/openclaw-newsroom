@@ -11,7 +11,7 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
           ┌──────────┬──────────┬──────────┐
           │          │          │          │
     📈 리서치부  🚨 속보부   📰 편집부  🛡️ 리스크부
-    #ai-research #ai-breaking #ai-editorial #ai-risk
+    #ai-research #ai-breaking #ai-desk    #ai-risk
           │          │          │          │
    chief-analyst  news-desk  editor-    risk-
           │                  in-chief   manager
@@ -56,10 +56,9 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 
 | 채널 | 용도 |
 |------|------|
-| `#ai-desk` | 편집국장 지휘소. 모닝/이브닝 브리핑, 매크로 시그널, 시스템 헬스체크 |
+| `#ai-desk` | 편집국장 지휘소 + 편집부. 모닝/이브닝 브리핑, 매크로 시그널, 뉴스레터, 심층 분석, 리포트 |
 | `#ai-research` | 종목 추천, 시장 브리핑, 워치리스트, 성과 추적 |
 | `#ai-breaking` | 속보 감지, 긴급 알림, 세션 전환 브리핑 |
-| `#ai-editorial` | 뉴스레터, 심층 분석, 섹터 리포트 |
 | `#ai-risk` | 시장 위기 스캔, 리스크 경보, 위클리 리스크 리뷰 |
 | `#ai-debate` | 투자 대가 토론 (종목 검증, 시장 전망) |
 | `#ai-blog` | 트렌드 편집국 (편집회의, 블로그 초안, 수익 리포트) |
@@ -75,7 +74,7 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 | 매 30분 | 속보 스캔 | news-desk | #ai-breaking |
 | 매 정시 | 시장 위기 스캔 | risk-manager | #ai-risk |
 | 매 30분 | 시스템 헬스체크 | newsroom-chief | #ai-desk |
-| 04:00 | 오늘의 뉴스레터 | editor-in-chief | #ai-editorial |
+| 04:00 | 오늘의 뉴스레터 | editor-in-chief | #ai-desk |
 | 06:00 | 미국장 마감 브리핑 | chief-analyst | #ai-research |
 | 06:00 | 세션 전환 (프리마켓) | news-desk | #ai-breaking |
 | 06:30 | 미국 추천 종목 | chief-analyst | #ai-research |
@@ -88,7 +87,7 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 | 09:00~15:00 | 워치리스트 점검 (장중) | chief-analyst | #ai-research |
 | 15:30 | 세션 전환 (유럽장) | news-desk | #ai-breaking |
 | 16:00 | 장 마감 브리핑 | chief-analyst | #ai-research |
-| 16:30 | 마켓 데일리 요약 | editor-in-chief | #ai-editorial |
+| 16:30 | 마켓 데일리 요약 | editor-in-chief | #ai-desk |
 | 16:30 | 일일 성과 업데이트 | performance-tracker | #ai-research |
 | 17:00 | 내일의 추천 종목 | chief-analyst | #ai-research |
 | 17:30 | 추천 종목 등록 | performance-tracker | #ai-research |
@@ -102,14 +101,14 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 |------|------|---------|------|
 | 월/목 08:00 | 매크로 레짐 판단 | macro-strategist | #ai-desk |
 | 수 17:30 | 심층 종목 분석 | chief-analyst | #ai-research |
-| 수 18:30 | 딥다이브 리포트 | editor-in-chief | #ai-editorial |
+| 수 18:30 | 딥다이브 리포트 | editor-in-chief | #ai-desk |
 | 금 17:00 | 투자 환경 시그널 | macro-strategist | #ai-desk |
 | 금 17:30 | 섹터 로테이션 리포트 | chief-analyst | #ai-research |
 | 금 18:00 | 주간 시장 전망 토론 | debate-moderator | #ai-debate |
-| 금 18:30 | 섹터 위클리 | editor-in-chief | #ai-editorial |
+| 금 18:30 | 섹터 위클리 | editor-in-chief | #ai-desk |
 | 금 19:00 | 위클리 리스크 리뷰 | risk-manager | #ai-risk |
 | 토 09:00 | 주간 성적표 | performance-tracker | #ai-research |
-| 토 10:00 | 위클리 리뷰 | editor-in-chief | #ai-editorial |
+| 토 10:00 | 위클리 리뷰 | editor-in-chief | #ai-desk |
 | 토 11:00 | 위클리 성과 리뷰 | newsroom-chief | #ai-desk |
 
 #### 월간

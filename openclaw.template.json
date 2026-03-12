@@ -680,9 +680,6 @@
         "#ai-research": {
           "allow": true
         },
-        "#ai-editorial": {
-          "allow": true
-        },
         "#ai-breaking": {
           "allow": true
         },
@@ -710,7 +707,7 @@
     "bind": "loopback",
     "auth": {
       "mode": "token",
-      "token": "<YOUR_GATEWAY_TOKEN>"
+      "token": "b2aec4e3ab1326c6eb5ab4324d6ec18a89cc6130aa322c16"
     },
     "tailscale": {
       "mode": "off",

@@ -8,7 +8,7 @@
 |------|------------|------|------|
 | 📈 리서치부 | chief-analyst | #ai-research | 종목 추천, 시장 브리핑, 워치리스트, 기술/펀더멘탈 분석 |
 | 🚨 속보부 | news-desk | #ai-breaking | 속보 감지, 긴급 알림, 글로벌 시간대 릴레이 모니터링 |
-| 📰 편집부 | editor-in-chief | #ai-editorial | 뉴스레터, 심층 분석, 섹터 리포트, 위클리 리뷰 |
+| 📰 편집부 | editor-in-chief | #ai-desk | 뉴스레터, 심층 분석, 섹터 리포트, 위클리 리뷰 |
 | 🛡️ 리스크부 | risk-manager | #ai-risk | 전 부서 공용 리스크 검증, 시장 위기 경보 |
 | 📊 성과분석실 | performance-tracker | #ai-research | 추천 종목 성과 추적, 적중률 집계, 전략 피드백 |
 | 🌐 매크로전략실 | macro-strategist | #ai-desk | 거시경제 레짐 판단, 이벤트 프리뷰, 투자 환경 시그널 |
@@ -64,7 +64,7 @@ python3 /Users/j/.openclaw/workspace/scripts/market_data.py --symbols ^VIX ^GSPC
 1. **각 채널에서 당일 실적을 직접 확인한다** (추측 금지):
    - #ai-research 읽기 → 리서치부 브리핑/추천 종목 발행 건수
    - #ai-breaking 읽기 → 속보부 속보 건수, 주요 속보 요약
-   - #ai-editorial 읽기 → 편집부 콘텐츠 발행 건수
+   - #ai-desk 읽기 → 편집부 콘텐츠 발행 건수
    - #ai-risk 읽기 → 리스크부 위기 경보 발생 여부
 2. 야간 커버리지 지시사항 정리:
    - **웹 검색으로 야간 경제 이벤트의 정확한 KST 시간을 확인한다** (서머타임 반영 필수 — 추측 금지)
@@ -101,7 +101,7 @@ python3 /Users/j/.openclaw/workspace/scripts/market_data.py --symbols <추천 �
 2. 한 주간 편집국 전체 성과를 종합 평가:
    - 추천 종목 적중률 (위에서 계산한 실제 수익률 사용)
    - 속보 대응 속도 및 정확도 (#ai-breaking 확인)
-   - 콘텐츠 발행 건수 및 종류 (#ai-editorial 확인)
+   - 콘텐츠 발행 건수 및 종류 (#ai-desk 확인)
    - 리스크 경보 적절성 (#ai-risk 확인)
 3. 다음 주 주요 이벤트 미리보기 (웹 검색)
 4. #ai-desk에 게시
@@ -153,7 +153,7 @@ openclaw agent --agent risk-manager --session-id "$(uuidgen)" --message "긴급 
 ```
 4. 두 결과를 취합하여 편집부에 긴급 리포트 작성 요청:
 ```
-openclaw agent --agent editor-in-chief --session-id "$(uuidgen)" --message "긴급 리포트 작성 요청: [속보 내용]. 리서치부 분석: [분석 결과]. 리스크부 평가: [평가 결과]. 긴급 리포트를 작성하여 #ai-editorial에 게시 바람." --thinking medium --timeout 600
+openclaw agent --agent editor-in-chief --session-id "$(uuidgen)" --message "긴급 리포트 작성 요청: [속보 내용]. 리서치부 분석: [분석 결과]. 리스크부 평가: [평가 결과]. 긴급 리포트를 작성하여 #ai-desk에 게시 바람." --thinking medium --timeout 600
 ```
 5. **#ai-desk에 조율 완료 보고를 게시한다:**
 ```
@@ -162,7 +162,7 @@ openclaw agent --agent editor-in-chief --session-id "$(uuidgen)" --message "긴�
 *속보:* (속보 헤드라인)
 *📈 리서치부:* (분석 결과 한 줄 요약)
 *🛡️ 리스크부:* (리스크 평가 한 줄 요약)
-*📰 편집부:* 긴급 리포트 #ai-editorial에 게시 완료
+*📰 편집부:* 긴급 리포트 #ai-desk에 게시 완료
 ```
 
 ## 시스템 헬스체크 (cron에서 호출)

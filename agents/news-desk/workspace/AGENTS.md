@@ -122,7 +122,7 @@ openclaw agent --agent newsroom-chief --session-id "$(uuidgen)" --message "긴�
 ```
 3. 보고 완료 후 #ai-breaking에 후속 안내 게시:
 ```
-> 편집국장에게 보고 완료. 리서치부·리스크부 긴급 분석 진행 중. 후속 리포트는 #ai-editorial에서 확인.
+> 편집국장에게 보고 완료. 리서치부·리스크부 긴급 분석 진행 중. 후속 리포트는 #ai-desk에서 확인.
 ```
 
 # 운영 시간대별 감시 대상

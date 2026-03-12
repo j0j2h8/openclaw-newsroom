@@ -115,7 +115,7 @@
       "name": "워치리스트 점검 (장중)",
       "enabled": true,
       "createdAtMs": 1773154917546,
-      "updatedAtMs": 1773273635791,
+      "updatedAtMs": 1773277277458,
       "schedule": {
         "kind": "cron",
         "expr": "0 9-15 * * 1-5",
@@ -135,13 +135,13 @@
         "to": "C0AKAV7QD0W"
       },
       "state": {
-        "nextRunAtMs": 1773277200000,
-        "lastRunAtMs": 1773273600017,
+        "nextRunAtMs": 1773280800000,
+        "lastRunAtMs": 1773277200028,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 35774,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 77430,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
@@ -203,7 +203,7 @@
       "delivery": {
         "mode": "announce",
         "channel": "slack",
-        "to": "C0AK3MUJU07"
+        "to": "C0ALPKE9R7S"
       },
       "state": {
         "nextRunAtMs": 1773342000000,
@@ -294,7 +294,7 @@
       "name": "속보 스캔",
       "enabled": true,
       "createdAtMs": 1773215466220,
-      "updatedAtMs": 1773273656274,
+      "updatedAtMs": 1773279065302,
       "schedule": {
         "kind": "cron",
         "expr": "0,30 * * * *",
@@ -314,15 +314,14 @@
         "to": "C0AKDTGRELX"
       },
       "state": {
-        "nextRunAtMs": 1773275400000,
-        "lastRunAtMs": 1773273635791,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 20483,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID eea9301f-9bb7-4d50-af7d-113dee812b3e in your message.\",\"param\":null},\"sequence_number\":2}"
+        "nextRunAtMs": 1773280800000,
+        "lastRunAtMs": 1773279000020,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 65282,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -594,7 +593,7 @@
       "delivery": {
         "mode": "announce",
         "channel": "slack",
-        "to": "C0AK3MUJU07"
+        "to": "C0ALPKE9R7S"
       },
       "state": {
         "nextRunAtMs": 1773300600000,
@@ -613,7 +612,7 @@
       "name": "시장 위기 스캔",
       "enabled": true,
       "createdAtMs": 1773215509644,
-      "updatedAtMs": 1773273698973,
+      "updatedAtMs": 1773277385107,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -633,11 +632,11 @@
         "to": "C0AE356T623"
       },
       "state": {
-        "nextRunAtMs": 1773277200000,
-        "lastRunAtMs": 1773273667710,
+        "nextRunAtMs": 1773280800000,
+        "lastRunAtMs": 1773277376456,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 31263,
+        "lastDurationMs": 8651,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -760,7 +759,7 @@
       "delivery": {
         "mode": "announce",
         "channel": "slack",
-        "to": "C0AK3MUJU07"
+        "to": "C0ALPKE9R7S"
       },
       "state": {
         "nextRunAtMs": 1773394200000
@@ -789,7 +788,7 @@
       "delivery": {
         "mode": "announce",
         "channel": "slack",
-        "to": "C0AK3MUJU07"
+        "to": "C0ALPKE9R7S"
       },
       "state": {
         "nextRunAtMs": 1773826200000,
@@ -825,7 +824,7 @@
       "delivery": {
         "mode": "announce",
         "channel": "slack",
-        "to": "C0AK3MUJU07"
+        "to": "C0ALPKE9R7S"
       },
       "state": {
         "nextRunAtMs": 1773450000000
@@ -1105,7 +1104,7 @@
       "name": "시스템 헬스체크",
       "enabled": true,
       "createdAtMs": 1773225839258,
-      "updatedAtMs": 1773273718126,
+      "updatedAtMs": 1773279089027,
       "schedule": {
         "kind": "cron",
         "expr": "*/30 * * * *",
@@ -1126,15 +1125,14 @@
         "to": "C0ALPKE9R7S"
       },
       "state": {
-        "nextRunAtMs": 1773275400000,
-        "lastRunAtMs": 1773273698973,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 19153,
+        "nextRunAtMs": 1773280800000,
+        "lastRunAtMs": 1773279065302,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23725,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID 91270f27-2377-40c2-b88e-fb566c507216 in your message.\",\"param\":null},\"sequence_number\":2}"
+        "consecutiveErrors": 0
       }
     },
     {
