@@ -74,7 +74,7 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 | 매 정시 | 시장 위기 스캔 | risk-manager | #ai-risk |
 | 매 30분 | 시스템 헬스체크 | newsroom-chief | #ai-desk |
 | 04:00 | 오늘의 뉴스레터 | editor-in-chief | #ai-editorial |
-| 06:00 | 트렌드 편집회의 | trend-chief | #ai-blog |
+| 06:00 | 트렌드 편집회의 (계획만) | trend-chief | #ai-blog |
 | 06:00 | 미국장 마감 브리핑 | chief-analyst | #ai-research |
 | 06:00 | 세션 전환 (프리마켓) | news-desk | #ai-breaking |
 | 06:30 | 미국 추천 종목 | chief-analyst | #ai-research |
@@ -82,6 +82,7 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 | 07:00 | 프리마켓 종목 토론 | debate-moderator | #ai-debate |
 | 07:00 | 모닝 편집회의 | newsroom-chief | #ai-desk |
 | 07:30 | 매크로 이벤트 프리뷰 | macro-strategist | #ai-desk |
+| 08:00 | 콘텐츠 제작 (완성글 발행) | trend-chief | #ai-blog |
 | 08:30 | 장 시작 전 브리핑 | chief-analyst | #ai-research |
 | 09:00 | 세션 전환 (아시아장) | news-desk | #ai-breaking |
 | 09:00~15:00 | 워치리스트 점검 (장중) | chief-analyst | #ai-research |

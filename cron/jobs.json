@@ -7,7 +7,7 @@
       "name": "미국장 마감 브리핑",
       "enabled": true,
       "createdAtMs": 1773154894619,
-      "updatedAtMs": 1773176461890,
+      "updatedAtMs": 1773262879482,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * 1-5",
@@ -27,11 +27,11 @@
         "to": "C0AKAV7QD0W"
       },
       "state": {
-        "nextRunAtMs": 1773262800000,
-        "lastRunAtMs": 1773176400006,
+        "nextRunAtMs": 1773349200000,
+        "lastRunAtMs": 1773262800023,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 61884,
+        "lastDurationMs": 79459,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "장 시작 전 브리핑",
       "enabled": true,
       "createdAtMs": 1773154905709,
-      "updatedAtMs": 1773185461773,
+      "updatedAtMs": 1773271882568,
       "schedule": {
         "kind": "cron",
         "expr": "30 8 * * 1-5",
@@ -63,11 +63,11 @@
         "to": "C0AKAV7QD0W"
       },
       "state": {
-        "nextRunAtMs": 1773271800000,
-        "lastRunAtMs": 1773185400014,
+        "nextRunAtMs": 1773358200000,
+        "lastRunAtMs": 1773271800019,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 61759,
+        "lastDurationMs": 82549,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -115,7 +115,7 @@
       "name": "워치리스트 점검 (장중)",
       "enabled": true,
       "createdAtMs": 1773154917546,
-      "updatedAtMs": 1773208827385,
+      "updatedAtMs": 1773273635791,
       "schedule": {
         "kind": "cron",
         "expr": "0 9-15 * * 1-5",
@@ -135,11 +135,11 @@
         "to": "C0AKAV7QD0W"
       },
       "state": {
-        "nextRunAtMs": 1773273600000,
-        "lastRunAtMs": 1773208800014,
+        "nextRunAtMs": 1773277200000,
+        "lastRunAtMs": 1773273600017,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 27371,
+        "lastDurationMs": 35774,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -151,7 +151,7 @@
       "name": "워치리스트 점검 (미국장)",
       "enabled": true,
       "createdAtMs": 1773154919467,
-      "updatedAtMs": 1773189202605,
+      "updatedAtMs": 1773259281517,
       "schedule": {
         "kind": "cron",
         "expr": "0 22-23,0-5 * * 1-5"
@@ -170,11 +170,11 @@
         "to": "C0AKAV7QD0W"
       },
       "state": {
-        "nextRunAtMs": 1773234000000,
-        "lastRunAtMs": 1773172800009,
+        "nextRunAtMs": 1773320400000,
+        "lastRunAtMs": 1773259200026,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 71561,
+        "lastDurationMs": 81491,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -186,7 +186,7 @@
       "name": "오늘의 뉴스레터",
       "enabled": true,
       "createdAtMs": 1773193536887,
-      "updatedAtMs": 1773216884768,
+      "updatedAtMs": 1773255920680,
       "schedule": {
         "kind": "cron",
         "expr": "0 4 * * *",
@@ -206,11 +206,11 @@
         "to": "C0AK3MUJU07"
       },
       "state": {
-        "nextRunAtMs": 1773255600000,
-        "lastRunAtMs": 1773216617306,
+        "nextRunAtMs": 1773342000000,
+        "lastRunAtMs": 1773255692034,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 267462,
+        "lastDurationMs": 228646,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -258,7 +258,7 @@
       "name": "미국 추천 종목",
       "enabled": true,
       "createdAtMs": 1773207744359,
-      "updatedAtMs": 1773207744359,
+      "updatedAtMs": 1773264933290,
       "schedule": {
         "kind": "cron",
         "expr": "30 6 * * 2-6",
@@ -278,7 +278,14 @@
         "to": "C0AKAV7QD0W"
       },
       "state": {
-        "nextRunAtMs": 1773264600000
+        "nextRunAtMs": 1773351000000,
+        "lastRunAtMs": 1773264600020,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 333270,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -287,7 +294,7 @@
       "name": "속보 스캔",
       "enabled": true,
       "createdAtMs": 1773215466220,
-      "updatedAtMs": 1773225028614,
+      "updatedAtMs": 1773273656274,
       "schedule": {
         "kind": "cron",
         "expr": "0,30 * * * *",
@@ -307,14 +314,15 @@
         "to": "C0AKDTGRELX"
       },
       "state": {
-        "nextRunAtMs": 1773226800000,
-        "lastRunAtMs": 1773225000017,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 28597,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1773275400000,
+        "lastRunAtMs": 1773273635791,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 20483,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1,
+        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID eea9301f-9bb7-4d50-af7d-113dee812b3e in your message.\",\"param\":null},\"sequence_number\":2}"
       }
     },
     {
@@ -323,7 +331,7 @@
       "name": "세션 전환 알림 (프리마켓)",
       "enabled": true,
       "createdAtMs": 1773215474291,
-      "updatedAtMs": 1773215474291,
+      "updatedAtMs": 1773263092824,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * 1-5",
@@ -343,7 +351,14 @@
         "to": "C0AKDTGRELX"
       },
       "state": {
-        "nextRunAtMs": 1773262800000
+        "nextRunAtMs": 1773349200000,
+        "lastRunAtMs": 1773262986737,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 106087,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -352,7 +367,7 @@
       "name": "세션 전환 알림 (아시아장)",
       "enabled": true,
       "createdAtMs": 1773215476288,
-      "updatedAtMs": 1773215476288,
+      "updatedAtMs": 1773273667710,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * 1-5",
@@ -372,7 +387,15 @@
         "to": "C0AKDTGRELX"
       },
       "state": {
-        "nextRunAtMs": 1773273600000
+        "nextRunAtMs": 1773360000000,
+        "lastRunAtMs": 1773273656274,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 11436,
+        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID 313e668f-ad70-497f-bc0b-c4a6a46b67a5 in your message.\",\"param\":null},\"sequence_number\":2}",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -417,7 +440,7 @@
       "name": "세션 전환 알림 (미국장)",
       "enabled": true,
       "createdAtMs": 1773215481119,
-      "updatedAtMs": 1773215481119,
+      "updatedAtMs": 1773235886869,
       "schedule": {
         "kind": "cron",
         "expr": "30 22 * * 1-5",
@@ -437,7 +460,14 @@
         "to": "C0AKDTGRELX"
       },
       "state": {
-        "nextRunAtMs": 1773235800000
+        "nextRunAtMs": 1773322200000,
+        "lastRunAtMs": 1773235857444,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 29425,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -446,7 +476,7 @@
       "name": "모닝 편집회의",
       "enabled": true,
       "createdAtMs": 1773215501980,
-      "updatedAtMs": 1773216555676,
+      "updatedAtMs": 1773266526487,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -466,11 +496,11 @@
         "to": "C0ALPKE9R7S"
       },
       "state": {
-        "nextRunAtMs": 1773266400000,
-        "lastRunAtMs": 1773216480215,
+        "nextRunAtMs": 1773352800000,
+        "lastRunAtMs": 1773266471671,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 75461,
+        "lastDurationMs": 54816,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -583,7 +613,7 @@
       "name": "시장 위기 스캔",
       "enabled": true,
       "createdAtMs": 1773215509644,
-      "updatedAtMs": 1773223368079,
+      "updatedAtMs": 1773273698973,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -603,13 +633,13 @@
         "to": "C0AE356T623"
       },
       "state": {
-        "nextRunAtMs": 1773226800000,
-        "lastRunAtMs": 1773223346098,
+        "nextRunAtMs": 1773277200000,
+        "lastRunAtMs": 1773273667710,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 21981,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 31263,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     },
@@ -874,7 +904,7 @@
       "name": "미국 성과 업데이트",
       "enabled": true,
       "createdAtMs": 1773224423169,
-      "updatedAtMs": 1773224423169,
+      "updatedAtMs": 1773265038006,
       "schedule": {
         "kind": "cron",
         "expr": "30 6 * * 1-5",
@@ -895,7 +925,14 @@
         "to": "C0AKAV7QD0W"
       },
       "state": {
-        "nextRunAtMs": 1773264600000
+        "nextRunAtMs": 1773351000000,
+        "lastRunAtMs": 1773265016151,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 21855,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -964,7 +1001,7 @@
       "name": "매크로 레짐 판단",
       "enabled": true,
       "createdAtMs": 1773224430130,
-      "updatedAtMs": 1773224430130,
+      "updatedAtMs": 1773270179520,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * 1,4",
@@ -985,7 +1022,14 @@
         "to": "C0ALPKE9R7S"
       },
       "state": {
-        "nextRunAtMs": 1773270000000
+        "nextRunAtMs": 1773615600000,
+        "lastRunAtMs": 1773270102962,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 76558,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -994,7 +1038,7 @@
       "name": "매크로 이벤트 프리뷰",
       "enabled": true,
       "createdAtMs": 1773224432304,
-      "updatedAtMs": 1773224525554,
+      "updatedAtMs": 1773268376490,
       "schedule": {
         "kind": "cron",
         "expr": "30 7 * * 1-5",
@@ -1015,11 +1059,11 @@
         "to": "C0ALPKE9R7S"
       },
       "state": {
-        "nextRunAtMs": 1773268200000,
-        "lastRunAtMs": 1773224470504,
+        "nextRunAtMs": 1773354600000,
+        "lastRunAtMs": 1773268261855,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 55050,
+        "lastDurationMs": 114635,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -1061,7 +1105,7 @@
       "name": "시스템 헬스체크",
       "enabled": true,
       "createdAtMs": 1773225839258,
-      "updatedAtMs": 1773225866550,
+      "updatedAtMs": 1773273718126,
       "schedule": {
         "kind": "cron",
         "expr": "*/30 * * * *",
@@ -1082,14 +1126,288 @@
         "to": "C0ALPKE9R7S"
       },
       "state": {
-        "nextRunAtMs": 1773226800000,
-        "lastRunAtMs": 1773225845975,
+        "nextRunAtMs": 1773275400000,
+        "lastRunAtMs": 1773273698973,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 19153,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1,
+        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID 91270f27-2377-40c2-b88e-fb566c507216 in your message.\",\"param\":null},\"sequence_number\":2}"
+      }
+    },
+    {
+      "id": "09a030c1-4e75-4f26-a1a8-ed0ea8a3056e",
+      "agentId": "debate-moderator",
+      "name": "추천 종목 토론",
+      "enabled": true,
+      "createdAtMs": 1773240803353,
+      "updatedAtMs": 1773240803353,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 17 * * 1-5",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "추천 종목 토론",
+        "thinking": "medium",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0ALSJJ4D88"
+      },
+      "state": {
+        "nextRunAtMs": 1773304200000
+      }
+    },
+    {
+      "id": "2a9e5ece-ddc8-49ea-ae8d-d1245e75948e",
+      "agentId": "debate-moderator",
+      "name": "프리마켓 종목 토론",
+      "enabled": true,
+      "createdAtMs": 1773240807668,
+      "updatedAtMs": 1773266817697,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * 1-5",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "추천 종목 토론",
+        "thinking": "medium",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0ALSJJ4D88"
+      },
+      "state": {
+        "nextRunAtMs": 1773352800000,
+        "lastRunAtMs": 1773266562111,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 20575,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 255586,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "44fb4883-935c-4a70-8e48-81d04106626e",
+      "agentId": "debate-moderator",
+      "name": "주간 시장 전망 토론",
+      "enabled": true,
+      "createdAtMs": 1773240809534,
+      "updatedAtMs": 1773240809534,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * 5",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "주간 시장 전망 토론",
+        "thinking": "medium",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0ALSJJ4D88"
+      },
+      "state": {
+        "nextRunAtMs": 1773392400000
+      }
+    },
+    {
+      "id": "8af2d53e-e11e-4f7a-b76b-3188309cf2fa",
+      "agentId": "trend-chief",
+      "name": "트렌드 편집회의",
+      "enabled": true,
+      "createdAtMs": 1773242523355,
+      "updatedAtMs": 1773263460413,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "트렌드 편집회의",
+        "thinking": "medium",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0AKWA7HM6J"
+      },
+      "state": {
+        "nextRunAtMs": 1773349200000,
+        "lastRunAtMs": 1773263144149,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 316264,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "decd4f77-6323-4dbf-8e7e-1abc845e3d47",
+      "agentId": "trend-chief",
+      "name": "오후 트렌드 체크",
+      "enabled": true,
+      "createdAtMs": 1773242529637,
+      "updatedAtMs": 1773242529637,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "오후 트렌드 체크",
+        "thinking": "medium",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0AKWA7HM6J"
+      },
+      "state": {
+        "nextRunAtMs": 1773291600000
+      }
+    },
+    {
+      "id": "6cecd366-821c-47fe-9cbc-d439dd8c7844",
+      "agentId": "trend-chief",
+      "name": "트렌드 일일 리포트",
+      "enabled": true,
+      "createdAtMs": 1773242550118,
+      "updatedAtMs": 1773242550118,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "일일 리포트",
+        "thinking": "medium",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0AKWA7HM6J"
+      },
+      "state": {
+        "nextRunAtMs": 1773306000000
+      }
+    },
+    {
+      "id": "bc7f7fc4-9fca-4dc0-8cc0-4903d2e2a784",
+      "agentId": "trend-chief",
+      "name": "주간 갱신 점검",
+      "enabled": true,
+      "createdAtMs": 1773242558740,
+      "updatedAtMs": 1773242558740,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "주간 갱신 점검",
+        "thinking": "medium",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0AKWA7HM6J"
+      },
+      "state": {
+        "nextRunAtMs": 1773619200000
+      }
+    },
+    {
+      "id": "d69f5cda-a326-422a-90ae-598128892f2c",
+      "agentId": "trend-chief",
+      "name": "월간 수익 리뷰",
+      "enabled": true,
+      "createdAtMs": 1773242566780,
+      "updatedAtMs": 1773242566780,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 1 * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "월간 수익 리뷰",
+        "thinking": "medium",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "C0AKWA7HM6J"
+      },
+      "state": {
+        "nextRunAtMs": 1775005200000
+      }
+    },
+    {
+      "id": "183d4d7a-20e7-4669-a0ec-9f23ac58fe60",
+      "agentId": "trend-chief",
+      "name": "콘텐츠 제작",
+      "enabled": true,
+      "createdAtMs": 1773274315112,
+      "updatedAtMs": 1773274315112,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "콘텐츠 제작"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last",
+        "to": "C0AKWA7HM6J"
+      },
+      "state": {
+        "nextRunAtMs": 1773356400000
       }
     }
   ]
