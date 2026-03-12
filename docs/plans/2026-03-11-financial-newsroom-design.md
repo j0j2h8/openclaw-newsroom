@@ -18,7 +18,7 @@ OpenClaw 기반 24시간 자율 운영 금융 편집국. 투자 리서치, 속�
 │ 리서치부  │ │ 속보부   │ │ 편집부    │ │ 리스크부  │
 │ chief-  │ │ news-   │ │ editor-  │ │ risk-   │
 │ analyst │ │  desk   │ │ in-chief │ │ manager │
-│ #ai-research│ │ #ai-breaking│ │ #ai-editorial│ │ #ai-risk │
+│ #ai-research│ │ #ai-breaking│ │ #ai-desk│ │ #ai-risk │
 └─────────┘ └─────────┘ └──────────┘ └──────────┘
 ```
 
@@ -26,7 +26,7 @@ OpenClaw 기반 24시간 자율 운영 금융 편집국. 투자 리서치, 속�
 |------|--------|------|------|
 | 리서치부 | chief-analyst (기존) | #ai-research | 종목 추천, 시장 브리핑, 워치리스트, 기술/펀더멘탈 분석 |
 | 속보부 | news-desk (신규) | #ai-breaking (신규) | 속보 감지, 긴급 알림, 글로벌 시간대 릴레이 모니터링 |
-| 편집부 | editor-in-chief (기존) | #ai-editorial | 뉴스레터, 심층 분석, 섹터 리포트, 위클리 리뷰 |
+| 편집부 | editor-in-chief (기존) | #ai-desk | 뉴스레터, 심층 분석, 섹터 리포트, 위클리 리뷰 |
 | 리스크부 | risk-manager (기존→승격) | #ai-risk | 전 부서 공용 리스크 검증, 시장 위기 경보 |
 | 편집국장 | newsroom-chief (신규) | #ai-desk (신규) | 부서간 조율, 일일 편집회의, 콘텐츠 캘린더 관리 |
 
@@ -132,7 +132,7 @@ trend-researcher는 속보부로 이관. 편집부에서 트렌드 조사가 필
          → content-writer 초안 작성
          → humanizer 문체 개선
          → editor-in-chief 최종 편집
-         → #ai-editorial 게시 + 파일 저장
+         → #ai-desk 게시 + 파일 저장
 ```
 
 ---
@@ -268,7 +268,7 @@ KST   리서치부          속보부            편집부           리스크�
 |------|------|
 | 에이전트 2개 | newsroom-chief (편집국장), news-desk (속보부장) |
 | Slack 채널 3개 | #ai-desk (편집국), #ai-breaking (속보), #ai-risk (리스크) |
-| Slack 채널 이름 변경 | #ai-picks → #ai-research, #ai-write → #ai-editorial |
+| Slack 채널 이름 변경 | #ai-picks → #ai-research, #ai-write → #ai-desk |
 
 ### 기존 에이전트 변경
 
