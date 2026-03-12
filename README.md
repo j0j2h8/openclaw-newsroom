@@ -79,6 +79,7 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 | 06:00 | 세션 전환 (프리마켓) | news-desk | #ai-breaking |
 | 06:30 | 미국 추천 종목 | chief-analyst | #ai-research |
 | 06:30 | 미국 성과 업데이트 | performance-tracker | #ai-research |
+| 07:00 | 소재 수집 (팩트/수치) | trend-chief | #ai-blog |
 | 07:00 | 프리마켓 종목 토론 | debate-moderator | #ai-debate |
 | 07:00 | 모닝 편집회의 | newsroom-chief | #ai-desk |
 | 07:30 | 매크로 이벤트 프리뷰 | macro-strategist | #ai-desk |

@@ -1409,6 +1409,33 @@
       "state": {
         "nextRunAtMs": 1773356400000
       }
+    },
+    {
+      "id": "cad00596-5e0e-4012-8b1c-2be2356cd4b5",
+      "agentId": "trend-chief",
+      "name": "소재 수집",
+      "enabled": true,
+      "createdAtMs": 1773274540294,
+      "updatedAtMs": 1773274540294,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "소재 수집"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last",
+        "to": "C0AKWA7HM6J"
+      },
+      "state": {
+        "nextRunAtMs": 1773352800000
+      }
     }
   ]
 }
