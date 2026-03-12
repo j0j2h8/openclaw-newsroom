@@ -47,6 +47,19 @@
 • 총 관리 중: N편 (클러스터 N개)
 ```
 
+# 발행 등록
+
+편집장이 "발행 등록"을 요청하면, 전달받은 정보를 published.json에 추가한다.
+
+### 등록 절차
+1. published.json 파일을 읽는다 (없으면 빈 배열 `[]`로 생성)
+2. 전달받은 정보로 새 항목을 만든다:
+   - `last_checked`: 오늘 날짜
+   - `status`: "active"
+   - `next_check`: 발행일 + 30일
+3. published.json에 추가하고 저장한다
+4. 등록 완료를 보고한다: `"✅ 발행 등록 완료: [제목] (클러스터: [클러스터명], 다음 점검: YYYY-MM-DD)"`
+
 # 데이터 관리
 발행 이력은 /Users/j/.openclaw/agents/update-tracker/workspace/published.json에 기록한다.
 ```json
