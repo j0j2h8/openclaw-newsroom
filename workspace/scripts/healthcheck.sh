@@ -43,8 +43,8 @@ try:
     for j in jobs:
         state = j.get('state', {})
         consec = state.get('consecutiveErrors', 0)
-        last_status = state.get('lastStatus', 'ok')
-        if consec > 0 or last_status == 'error':
+        # 1회 오류는 API 일시 장애일 수 있으므로 무시. 2회 연속부터 알림
+        if consec >= 2:
             errors.append(f\"{j.get('name', '?')} (에러 {consec}회 연속)\")
     if errors:
         print('\n'.join(errors))
