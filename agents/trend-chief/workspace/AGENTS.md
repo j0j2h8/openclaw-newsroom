@@ -260,7 +260,24 @@ openclaw agent --agent revenue-ops --session-id "$(uuidgen)" --message "광고 �
 
    문제 있으면 blog-writer에 수정 지시, 없으면 게시
 6. 최종 점검을 통과한 초안을 #ai-blog에 게시한다
-7. **발행 이력 등록** — 게시된 글을 update-tracker에 등록한다:
+7. **파일 저장** — 완성된 글을 파일로 저장한다:
+   - 저장 경로: `/Users/j/.openclaw/agents/trend-chief/workspace/posts/YYYY-MM-DD/`
+   - 파일명 규칙:
+     - 메인글: `pillar-[슬러그].md`
+     - 확장글: `support-N-[슬러그].md` (N은 순번)
+     - 허브: `hub-[슬러그].md`
+   - 슬러그: 제목에서 공백을 `-`로, 특수문자 제거, 30자 이내
+   - 파일 내용: `===== 블로그 게시용 =====` ~ `===== 게시용 끝 =====` 구간 + 태그 + 메타 정보
+   - 예시:
+     ```
+     posts/
+     └── 2026-03-12/
+         ├── pillar-2026-전기차-보조금-총정리.md
+         ├── support-1-전기차-보조금-신청-방법.md
+         ├── support-2-전기차-보조금-대상-차종.md
+         └── hub-전기차-보조금-모아보기.md
+     ```
+8. **발행 이력 등록** — 게시된 글을 update-tracker에 등록한다:
 ```
 openclaw agent --agent update-tracker --session-id "$(uuidgen)" --message "발행 등록.
 클러스터: [클러스터 주제]
