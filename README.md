@@ -67,27 +67,25 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 
 ## 크론 스케줄 (KST)
 
-### 매일
+### 금융 편집국
+
+#### 매일
 | 시간 | 작업 | 에이전트 | 채널 |
 |------|------|---------|------|
 | 매 30분 | 속보 스캔 | news-desk | #ai-breaking |
 | 매 정시 | 시장 위기 스캔 | risk-manager | #ai-risk |
 | 매 30분 | 시스템 헬스체크 | newsroom-chief | #ai-desk |
 | 04:00 | 오늘의 뉴스레터 | editor-in-chief | #ai-editorial |
-| 06:00 | 트렌드 편집회의 (계획만) | trend-chief | #ai-blog |
 | 06:00 | 미국장 마감 브리핑 | chief-analyst | #ai-research |
 | 06:00 | 세션 전환 (프리마켓) | news-desk | #ai-breaking |
 | 06:30 | 미국 추천 종목 | chief-analyst | #ai-research |
 | 06:30 | 미국 성과 업데이트 | performance-tracker | #ai-research |
-| 07:00 | 소재 수집 (팩트/수치) | trend-chief | #ai-blog |
 | 07:00 | 프리마켓 종목 토론 | debate-moderator | #ai-debate |
 | 07:00 | 모닝 편집회의 | newsroom-chief | #ai-desk |
 | 07:30 | 매크로 이벤트 프리뷰 | macro-strategist | #ai-desk |
-| 08:00 | 콘텐츠 제작 (완성글 발행) | trend-chief | #ai-blog |
 | 08:30 | 장 시작 전 브리핑 | chief-analyst | #ai-research |
 | 09:00 | 세션 전환 (아시아장) | news-desk | #ai-breaking |
 | 09:00~15:00 | 워치리스트 점검 (장중) | chief-analyst | #ai-research |
-| 14:00 | 오후 트렌드 체크 | trend-chief | #ai-blog |
 | 15:30 | 세션 전환 (유럽장) | news-desk | #ai-breaking |
 | 16:00 | 장 마감 브리핑 | chief-analyst | #ai-research |
 | 16:30 | 마켓 데일리 요약 | editor-in-chief | #ai-editorial |
@@ -95,31 +93,49 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 | 17:00 | 내일의 추천 종목 | chief-analyst | #ai-research |
 | 17:30 | 추천 종목 등록 | performance-tracker | #ai-research |
 | 17:30 | 추천 종목 토론 | debate-moderator | #ai-debate |
-| 18:00 | 트렌드 일일 리포트 | trend-chief | #ai-blog |
 | 19:00 | 이브닝 마감회의 | newsroom-chief | #ai-desk |
 | 22:00~05:00 | 워치리스트 점검 (미국장) | chief-analyst | #ai-research |
 | 22:30 | 세션 전환 (미국장) | news-desk | #ai-breaking |
 
-### 주간
+#### 주간
 | 시간 | 작업 | 에이전트 | 채널 |
 |------|------|---------|------|
-| 월 09:00 | 주간 갱신 점검 | trend-chief | #ai-blog |
 | 월/목 08:00 | 매크로 레짐 판단 | macro-strategist | #ai-desk |
 | 수 17:30 | 심층 종목 분석 | chief-analyst | #ai-research |
 | 수 18:30 | 딥다이브 리포트 | editor-in-chief | #ai-editorial |
 | 금 17:00 | 투자 환경 시그널 | macro-strategist | #ai-desk |
 | 금 17:30 | 섹터 로테이션 리포트 | chief-analyst | #ai-research |
-| 금 18:30 | 섹터 위클리 | editor-in-chief | #ai-editorial |
 | 금 18:00 | 주간 시장 전망 토론 | debate-moderator | #ai-debate |
+| 금 18:30 | 섹터 위클리 | editor-in-chief | #ai-editorial |
 | 금 19:00 | 위클리 리스크 리뷰 | risk-manager | #ai-risk |
 | 토 09:00 | 주간 성적표 | performance-tracker | #ai-research |
 | 토 10:00 | 위클리 리뷰 | editor-in-chief | #ai-editorial |
 | 토 11:00 | 위클리 성과 리뷰 | newsroom-chief | #ai-desk |
 
-### 월간
+#### 월간
 | 시간 | 작업 | 에이전트 | 채널 |
 |------|------|---------|------|
 | 매월 1일 10:00 | 월간 전략 피드백 | performance-tracker | #ai-research |
+
+### 트렌드 편집국
+
+#### 매일
+| 시간 | 작업 | 에이전트 | 채널 |
+|------|------|---------|------|
+| 06:00 | 편집회의 (클러스터 계획) | trend-chief | #ai-blog |
+| 07:00 | 소재 수집 (팩트/수치) | trend-chief | #ai-blog |
+| 08:00 | 콘텐츠 제작 (완성글 발행) | trend-chief | #ai-blog |
+| 14:00 | 오후 트렌드 체크 | trend-chief | #ai-blog |
+| 18:00 | 일일 리포트 | trend-chief | #ai-blog |
+
+#### 주간
+| 시간 | 작업 | 에이전트 | 채널 |
+|------|------|---------|------|
+| 월 09:00 | 주간 갱신 점검 | trend-chief | #ai-blog |
+
+#### 월간
+| 시간 | 작업 | 에이전트 | 채널 |
+|------|------|---------|------|
 | 매월 1일 10:00 | 월간 수익 리뷰 | trend-chief | #ai-blog |
 
 ## 디렉토리 구조
