@@ -341,7 +341,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "세션 전환 알림",
+        "message": "세션 전환 알림: 미국장 마감 → 프리마켓",
         "thinking": "medium"
       },
       "delivery": {
@@ -377,7 +377,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "세션 전환 알림",
+        "message": "세션 전환 알림: 아시아장 개장",
         "thinking": "medium"
       },
       "delivery": {
@@ -414,7 +414,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "세션 전환 알림",
+        "message": "세션 전환 알림: 아시아장 마감 → 유럽장 전환",
         "thinking": "medium"
       },
       "delivery": {
@@ -450,7 +450,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "세션 전환 알림",
+        "message": "세션 전환 알림: 미국장 개장",
         "thinking": "medium"
       },
       "delivery": {
