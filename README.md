@@ -1,7 +1,7 @@
 # OpenClaw Newsroom
 
 24시간 자율 운영되는 AI 편집국 시스템.
-OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며, 금융 편집국(시장 분석 · 종목 추천 · 속보 · 리스크 · 투자 대가 토론)과 트렌드 편집국(트렌드 포착 · SEO 블로그 · 수익 최적화)을 자동 운영한다.
+OpenClaw 플랫폼 위에서 38개 에이전트가 Slack을 통해 협업하며, 금융 편집국(시장 분석 · 종목 추천 · 속보 · 리스크 · 투자 대가 토론), 퀀트 랩(팩터 기반 시그널 · 성과 추적), 트렌드 편집국(트렌드 포착 · SEO 블로그 · 수익 최적화)을 자동 운영한다.
 
 ## 조직도
 
@@ -40,6 +40,17 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 
     편집 파이프라인: trend-researcher → content-writer → humanizer → editor-in-chief
     여행 파이프라인: destination-researcher → itinerary-builder → travel-planner
+
+    🔬 퀀트 랩 (#ai-desk)
+    quant-chief (랩장)
+    ┌──────┬──────┐
+    │📡    │📊    │
+    │quant │quant │
+    │signal│track.│
+    └──────┴──────┘
+
+    ⚖️ 대결 심판 (#ai-desk)
+    versus-judge — 편집국 vs 퀀트 랩 주간 대결 판정
 
     📡 트렌드 편집국 (#ai-blog)
     trend-chief (편집장)
@@ -109,12 +120,21 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 | 금 19:00 | 위클리 리스크 리뷰 | risk-manager | #ai-risk |
 | 토 09:00 | 주간 성적표 | performance-tracker | #ai-research |
 | 토 10:00 | 위클리 리뷰 | editor-in-chief | #ai-desk |
+| 토 10:00 | 편집국 vs 퀀트 랩 주간 대결 | versus-judge | #ai-desk |
 | 토 11:00 | 위클리 성과 리뷰 | newsroom-chief | #ai-desk |
 
 #### 월간
 | 시간 | 작업 | 에이전트 | 채널 |
 |------|------|---------|------|
 | 매월 1일 10:00 | 월간 전략 피드백 | performance-tracker | #ai-research |
+
+### 퀀트 랩
+
+#### 매일
+| 시간 | 작업 | 에이전트 | 채널 |
+|------|------|---------|------|
+| 08:30 | 한국 장전 퀀트 리포트 | quant-chief | #ai-desk |
+| 22:00 | 미국 장전 퀀트 리포트 | quant-chief | #ai-desk |
 
 ### 트렌드 편집국
 
@@ -158,7 +178,8 @@ OpenClaw 플랫폼 위에서 35개 에이전트가 Slack을 통해 협업하며,
 │   │   ├── market_data.py             # 실시간 시장 데이터 수집 (yfinance)
 │   │   ├── healthcheck.sh             # 시스템 헬스체크
 │   │   ├── stock-picks.py             # 종목 추천 파이프라인
-│   │   └── morning-briefing.py        # 모닝 브리핑 스크립트
+│   │   ├── morning-briefing.py        # 모닝 브리핑 스크립트
+│   │   └── publish_wordpress.py       # WordPress.com 자동 발행
 │   └── data/                          # 종목 추천/분석 데이터
 ├── cron/
 │   ├── jobs.json                      # 크론 작업 설정
